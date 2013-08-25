@@ -1,2 +1,2 @@
-USERNAME=yourlogin
-password=yourpwd
+DBUSERNAME=yourlogin
+DBPASSWORD=yourpwd
