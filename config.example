@@ -1,2 +1,5 @@
 DBUSERNAME=yourlogin
 DBPASSWORD=yourpwd
+# where to scp backups to
+SERVERS=(server.com: server2.com)
+BACKUP_DIR=~/backups/
