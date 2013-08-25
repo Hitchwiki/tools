@@ -1,5 +1,14 @@
 DBUSERNAME=yourlogin
 DBPASSWORD=yourpwd
+
 # where to scp backups to
 SERVERS=(server.com: server2.com)
-BACKUP_DIR=~/backups/
+
+# Where your backups are be stored
+BACKUP_DIR=~/backup/
+
+# This will usually be empty. Only severe errors are logged
+BACKUP_LOG=~/backup.log
+
+# Send emails about failed backups here
+EMERGENCY_EMAIL=your@email.com
