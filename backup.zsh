@@ -6,6 +6,10 @@ source lib.zsh
 
 ./upload.zsh
 
+if [[ -f custom.zsh ]] {
+	./custom.zsh
+}
+
 unset DBUSERNAME
 unset DBPASSWORD
 unset SERVERS

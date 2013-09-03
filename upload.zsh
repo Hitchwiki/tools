@@ -3,6 +3,6 @@
 source lib.zsh
 
 for s ($SERVERS) {
-	rsync -ra $BACKUP_DIR/* $s
+	rsync -racW $BACKUP_DIR/* $s
 }
 
