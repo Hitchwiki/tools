@@ -3,6 +3,6 @@
 source lib.zsh
 
 for s ($SERVERS) {
-	scp -q $BACKUP_DIR/* $s
+	rsync -ra $BACKUP_DIR/* $s
 }
 
