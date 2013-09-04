@@ -2,7 +2,7 @@
 
 source lib.zsh
 
-IFS=$'\n' databases=($(echo "SHOW DATABASES;" | mysql -u$DBUSERNAME -p$DBPASSWORD | grep -E '^hitchwiki'))
+IFS=$'\n' databases=($(echo "SHOW DATABASES;" | mysql -u$DBUSERNAME -p$DBPASSWORD ))
 
 if [[ -z $databases ]] {
 	err "No databases found."
