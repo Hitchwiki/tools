@@ -2,7 +2,7 @@
 
 source lib.zsh
 
-IFS=$'\n' databases=($(echo "SHOW DATABASES;" | mysql -u$DBUSERNAME -p$DBPASSWORD ))
+IFS=$'\n' databases=($(echo "SHOW DATABASES;" | mysql -u$DBUSERNAME -p$DBPASSWORD | grep -E '^[a-z]'))
 
 if [[ -z $databases ]] {
 	err "No databases found."
