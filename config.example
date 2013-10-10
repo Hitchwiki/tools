@@ -2,7 +2,7 @@ DBUSERNAME=yourlogin
 DBPASSWORD=yourpwd
 
 # where to scp backups to
-SERVERS=(server.com: server2.com)
+SERVERS=(server.com:/var/backup server2.com:/tmp)
 
 # Where your backups are be stored
 BACKUP_DIR=~/backup/
@@ -12,3 +12,6 @@ BACKUP_LOG=~/backup.log
 
 # Send emails about failed backups here
 EMERGENCY_EMAIL=your@email.com
+
+# Databses that you do NOT want backups of (grep regex syntax)
+EXCLUDE_DB='Database|mysql|test|information_schema|phpmyadmin|performance_schema'
