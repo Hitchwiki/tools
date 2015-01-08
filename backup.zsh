@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-source lib.zsh 
+source lib.zsh
 
 ./dumpsql.zsh
 
